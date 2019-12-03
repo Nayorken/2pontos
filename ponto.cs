@@ -10,12 +10,14 @@ namespace _2pontos
     {
         private double _X;
         private double _Y;
+        private double _Z;
 
         public double X {set => _X = value; get => _X;}
         public double Y {set => _Y = value; get => _Y;}
+        public double Z { set => _Z = value; get => _Z; }
         public double Distancia(ponto P)
         {
-            return Math.Sqrt(Math.Pow(P.X - _X, 2) + Math.Pow(P.Y - _Y, 2));
+            return Math.Sqrt(Math.Pow(P.X - _X, 2) + Math.Pow(P.Y - _Y, 2) + Math.Pow(P.Z - _Z, 2));
         }
 
 
